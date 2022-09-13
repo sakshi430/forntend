@@ -1,0 +1,8 @@
+<form #userForm="ngForm" (ngSubmit)="getUserFormData(userForm.value)">
+  <input type="text" name="name" ngModel placeholder="enter name">
+  <br><br>
+  
+  <button>Add New User</button>
+</form>
+
+<input type="file" class="upload" accept=".csv" (change)="changeListener($event)">
